@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<!-- Document Title
+	============================================= -->
+	<title>Dream Beam</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/Dream_Beam_Logo.jpg" alt="DreamBeam Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/Dream_Beam_Logo.jpg" alt="DreamBeam Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul>
+							<li><a href="index.html"><div>Home</div></a>
+							</li>
+							<li><a href="#subscribe"><div>Learn More</div></a>
+							</li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+
+						<!-- Portfolio Single - Description
+						============================================= -->
+						<div class="fancy-title title-center">
+							<h2>Would you like more of this...</h2>
+						</div>
+
+						<!-- Portfolio Single Image
+						============================================= -->
+						<div class="promo promo-center col_one_third">
+							<img src="images/Well_Rested_Kids.jpg" alt="">
+						</div>
+						<!-- .portfolio-single-image end -->
+
+						<div class="col_one_third nobottommargin">
+
+							<!-- Portfolio Single Content
+							============================================= -->
+							<div class="col_one_third portfolio-single-content col_last nobottommargin">
+
+						</div>
+
+						<!-- Portfolio Single - Description End -->
+
+					</div>
+					<!-- .portfolio-single-content end -->
+
+					<div class="clear"></div>
+
+					<div class="divider divider-center"><i class="icon-circle"></i></div>
+
+						<!-- Portfolio Single - Description
+						============================================= -->
+						<div id='subscribe' class="fancy-title title-center">
+							<h2>And less of this?</h2>
+						</div>
+
+						<!-- Portfolio Single Image
+						============================================= -->
+						<div class="col_half portfolio-single-image">
+							<img src="images/Not_So_Well_Rested_Kids.jpg" alt="">
+						</div><!-- .portfolio-single-image end -->
+
+						<div class="col_one_third nobottommargin">
+
+
+						</div>
+
+						<!-- Portfolio Single Content
+						============================================= -->
+						<div class="col_one_third portfolio-single-content col_last nobottommargin">
+
+				</div>
+
+				<div class="widget centered subscribe-widget col_one_third center">
+
+					<h5><strong>Subscribe</strong> to receive <strong>important</strong> news about our upcoming Kickstarter:</h5>
+
+					<div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg="">
+					</div>
+
+					<form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+						<div class="input-group divcenter">
+							<span class="input-group-addon"><i class="icon-email2"></i></span>
+							<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+							<span class="input-group-btn">
+								<button class="btn btn-success" type="submit">Subscribe</button>
+							</span>
+						</div>
+					</form>
+
+					<script type="text/javascript">
+						$("#widget-subscribe-form").validate({
+							submitHandler: function(form) {
+								$(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+								$(form).ajaxSubmit({
+									target: '#widget-subscribe-form-result',
+									success: function() {
+										$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+										$('#widget-subscribe-form').find('.form-control').val('');
+										$('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
+										SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+									}
+								});
+							}
+						});
+					</script>
+				</div>
+
+			</div>
+
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap clearfix">
+
+					<div class="col_two_third">
+
+						<div class="col_one_third">
+
+							<div class="widget clearfix">
+
+								<img src="images/Dream_Beam_Logo.jpg" alt="Dream Beam Logo" class="footer-logo">
+
+								<!-- <p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p> -->
+
+								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+									<abbr title="Email Address"><strong>Email:</strong></abbr> support@dreambeam.us
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyrights &copy; 2016 All Rights Reserved by Dream Beam Inc.<br>
+						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+					</div>
+
+					<div class="col_half col_last tright">
+						<div class="fright clearfix">
+							<a href="http://www.facebook.com" target="_blank" class="social-icon si-small si-borderless si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="http://www.twitter.com" target="_blank" class="social-icon si-small si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+							<!-- <a href="#" class="social-icon si-small si-borderless si-gplus">
+								<i class="icon-gplus"></i>
+								<i class="icon-gplus"></i>
+							</a> -->
+
+						</div>
+
+						<div class="clear"></div>
+
+						<i class="icon-envelope2"></i> support@dreambeam.us <span class="middot">&middot;</span>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+
+</body>
+</html>
