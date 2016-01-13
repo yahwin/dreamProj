@@ -3389,7 +3389,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 #content {
 	position: relative;
 	overflow: hidden;
-	background-color: #FFF;
+	background-color: #41b3f4;
 }
 
 #content p { line-height: 1.8; }
@@ -10946,7 +10946,7 @@ label.error { display: none !important; }
 .fancy-title h6 {
 	position: relative;
 	display: inline-block;
-	background-color: #FFF;
+	background-color: #41b3f4;
 	padding-right: 15px;
 	margin-bottom: 0;
 }
@@ -13230,4 +13230,3 @@ body:not(.no-transition) #wrapper,
 	margin:0!important;
 	padding:0!important
 }
-
